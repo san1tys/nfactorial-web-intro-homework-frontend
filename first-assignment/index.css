@@ -1,0 +1,133 @@
+body {
+    margin: 20px 40px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+/*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+.wrapper {
+    display: flex;
+    height: 60px;
+    background-color: green;
+    margin-bottom: 20px;
+}
+
+/*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+.redExample {
+    flex: 1;
+    background-color: red;
+}
+
+/*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+.blueExample {
+    flex: 1;
+    background-color: blue;
+}
+
+/*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+.emptyExample2 {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+}
+
+.blueExample2 {
+    background-color: blue;
+}
+
+/* TODO: Add CSS for the rest of your solution below */
+
+.redExample3 {
+    flex: 1;
+    background-color: red;
+}
+
+.blueExample3 {
+    flex: 1;
+    background-color: blue;
+}
+
+.greenExample3 {
+    flex: 14;
+    background-color: green;
+}
+
+.redExample4 {
+    flex: 15;
+    background-color: red;
+}
+
+.blueExample4 {
+    flex: 1;
+    background-color: blue;
+}
+
+.redExample5 {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
+
+.inner_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.blueExample6 {
+    flex: 1;
+    background-color: blue;
+}
+
+.redExample6 {
+    flex: 7.5;
+    background-color: red;
+}
+
+.blueExample7 {
+    display: flex;
+    align-items: center;
+    flex: 15;
+    background-color: blue;
+}
+
+.redExample7 {
+    flex: 1;
+    background-color: red;
+}
+
+.greenExample7 {
+    width: 100%;
+    height: 20px;
+    background-color: green;
+}
+
+
+.greenExample8 {
+    flex: 2.7;
+    background-color: green;
+}
+
+
+.yellowExample8 {
+    flex: 1;
+    background-color: orange;
+}
+
+.greenExample9 {
+    flex: 0 0 20px;
+    background-color: green;
+}
+
+
+.yellowExample9 {
+    flex: 1;
+    background-color: orange;
+}
