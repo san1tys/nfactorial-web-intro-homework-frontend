@@ -1,0 +1,302 @@
+body {
+    font-family: "Inter";
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    width: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_img {
+    width: 19px;
+    height: 22px;
+}
+
+.logo_title {
+    font-size: 18px;
+    font-family: "Kanit";
+    font-weight: 500;
+}
+
+.header_nav {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav_items {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #081E34;
+}
+
+.nav_items:hover {
+    color: #712FFF;
+    transition: .5s ease-in-out;
+}
+
+.nav_btn {
+    width: 102px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 100px;
+    color: #081E34;
+    border: none;
+    background-color: #d6d8da;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.intro_text {
+    width: 495px;
+}
+
+.intro_text-title {
+    font-size: 54px;
+    font-family: "Kanit";
+    font-weight: 700;
+}
+
+.intro_text-desc {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.intro_btn {
+    width: 144px;
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #712FFF;
+    border: none;
+    border-radius: 100px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.section_how {
+    background-color: #E1DEE7;
+    border-radius: 32px;
+}
+
+.section_how-text {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.how-text-desc {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.how-text-title {
+    font-size: 54px;
+    font-family: "Kanit";
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+
+.elem-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 45px;
+}
+
+.elem-desc {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.elem-img {
+    width: 48px;
+    height: 64px;
+}
+
+.wrapp {
+    width: 757px;
+    padding: 100px 0;
+}
+
+.input-title {
+    font-size: 54px;
+    font-family: "Kanit";
+    font-weight: 700;
+    margin: 0 0 40px 0;
+}
+
+.input-desc {
+    width: 495px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+
+.inner_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #cccccc;
+}
+
+.wrap_input {
+    width: 575px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #e0dee7;
+    color: #cccccc;
+    padding-left: 40px;
+}
+
+.wrap_input::placeholder {
+    color: #cccccc;
+}
+
+.input_btn {
+    width: 106px;
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #712FFF;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.section_cv {
+    padding: 60px 0;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv-text {
+    width: 495px;
+}
+
+.cv-text-title {
+    font-size: 54px;
+    font-family: "Kanit";
+    font-weight: 600;
+    margin-top: 100px;
+
+}
+
+.cv-text-desc {
+    font-weight: 500px;
+    font-size: 16px;
+}
+
+
+.cv-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 114px;
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #712FFF;
+    border: none;
+    border-radius: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cv-btn img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.cv-btn i {
+    font-size: 16px;
+}
+
+.footer {
+    padding: 30px 0;
+    background-color: white;
+    border-radius: 25px 25px 0 0;
+}
+
+.footer_nav {
+    width: 372px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer .wrap {
+    align-items: center;
+}
+
+.footer-text {
+    width: 800px;
+}
+
+.footer-text-desc {
+    font-size: 14px;
+    font-weight: 500;
+    color: #838d99;
+    text-align: end;
+}
+
+.footer-text-desc a {
+    color: #838d99;
+}
+
+.footer-text-desc a:hover {
+    color: #712FFF;
+    transition: .5s ease-in-out;
+}
+
+
+
+.footer-right {
+    font-size: 14px;
+    font-weight: 500;
+    color: #081E34;
+    padding-top: 20px;
+    text-align: end;
+}
