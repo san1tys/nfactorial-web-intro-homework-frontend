@@ -1,0 +1,15 @@
+.header-title {
+    font-size: 18px;
+    padding: 22px 0;
+    margin: 0;
+    font-family: 'Kanit';
+    font-weight: 500;
+}
+
+.header-subtitle {
+    font-size: 48px;
+    padding: 100px 0;
+    margin: 0;
+    font-family: 'Kanit';
+    font-weight: 500;
+}
