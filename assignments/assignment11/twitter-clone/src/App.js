@@ -1,14 +1,16 @@
 import './App.css';
 import Home from './components/HomeComponent';
 import SideMenu from './components/SideMenuComponent';
+import Widgets from './components/Widgets/Widgets';
 
 function App() {
   return (
     <div className="App d-flex flex-row">
-      <SideMenu/>
+      <SideMenu />
       <div className='vertical-divider'></div>
-      <Home/>
+      <Home />
       <div className='vertical-divider'></div>
+      <Widgets />
     </div>
   );
 }
