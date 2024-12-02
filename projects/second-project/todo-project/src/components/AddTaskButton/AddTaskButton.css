@@ -1,0 +1,10 @@
+.add-task-btn {
+    width: 52px;
+    height: 52px;
+    background-color: #081E34;
+    border-radius: 50px;
+    font-size: 34px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

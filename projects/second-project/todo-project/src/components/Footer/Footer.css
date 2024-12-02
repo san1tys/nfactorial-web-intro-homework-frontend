@@ -1,0 +1,33 @@
+.footer {
+    padding: 50px 0;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text-desc {
+    font-size: 14px;
+    font-weight: 500;
+    color: #838d99;
+    margin: 0;
+}
+
+.footer-text-desc a {
+    color: #838d99;
+}
+
+.footer-text-desc a:hover {
+    color: #712FFF;
+    transition: .5s ease-in-out;
+}
+
+.footer-right {
+    font-size: 14px;
+    font-weight: 500;
+    color: #081E34;
+    padding-top: 50px;
+    margin: 0;
+}
