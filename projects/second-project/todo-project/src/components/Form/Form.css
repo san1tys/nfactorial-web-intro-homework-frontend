@@ -1,0 +1,51 @@
+.form {
+    width: 268px;
+    height: 234px;
+    background-color: #e4e6e7;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    right: 220px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.inner-wrap {
+    margin-left: 15px;
+}
+
+.form-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+.form textarea {
+    width: 236px;
+    height: 120px;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form textarea:focus {
+    outline: none;
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.btn-add-item {
+    width: 76px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    background-color: #081E34;
+    color: #FFFBFE;
+    align-items: start;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+}

@@ -3,8 +3,11 @@
     height: 52px;
     background-color: #081E34;
     border-radius: 50px;
-    font-size: 34px;
+    font-size: 36px;
     border: none;
     color: white;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
