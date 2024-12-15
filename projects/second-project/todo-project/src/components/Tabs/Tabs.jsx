@@ -12,8 +12,6 @@ const Tabs = ({ activeTab, setActiveTab }) => (
                 {tab}
             </button>
         ))}
-
-
     </div>
 
 );

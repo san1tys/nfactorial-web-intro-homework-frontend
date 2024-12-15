@@ -12,20 +12,16 @@ import './App.css';
 function App() {
   const [tasks, setTasks] = useState(() => {
     const localValue = localStorage.getItem("ITEMS");
-    if (localValue == null) {
-      return [];
-    }
-
-    return JSON.parse(localValue)
+    return localValue ? JSON.parse(localValue) : [];
   });
-
-  useEffect(() => {
-    localStorage.setItem("ITEMS", JSON.stringify(tasks))
-  }, [tasks])
 
   const [activeTab, setActiveTab] = useState("To Do");
   const [activeForm, setActiveForm] = useState(false);
   const [formText, setFormText] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem("ITEMS", JSON.stringify(tasks));
+  }, [tasks]);
 
   const handleAddTask = () => {
     if (formText.trim()) {
@@ -47,14 +43,39 @@ function App() {
   const handleMoveToTrash = (id) => {
     setTasks(
       tasks.map((task) =>
-        task.id === id ? { ...task, inTrash: !task.inTrash } : task
+        task.id === id ? { ...task, inTrash: true } : task
       )
     );
+  };
+
+  const handleRestoreTask = (id) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, inTrash: false } : task
+      )
+    );
+  };
+
+  const handleDeleteForever = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
   };
 
   const onAddTask = () => {
     setActiveForm(!activeForm);
   };
+
+  const filteredTasks = tasks.filter((task) => {
+    if (activeTab == "To Do") {
+      return !task.inTrash;
+    }
+    if (activeTab == "Done") {
+      return task.completed && !task.inTrash;
+    }
+    if (activeTab == "Trash") {
+      return task.inTrash;
+    }
+    return true;
+  });
 
   return (
     <>
@@ -75,20 +96,18 @@ function App() {
 
         <h1 className="activeTabTitle">{activeTab}</h1>
         <hr className="divider" />
-        <TaskList
-          tasks={tasks.filter((task) => {
-            if (activeTab === "To Do") {
-              return !task.inTrash
-            } else if (activeTab === "Done") {
-              return task.completed && !task.inTrash;
-            } else if (activeTab === "Trash") {
-              return task.inTrash;
-            }
-            return true;
-          })}
-          onMoveToTrash={handleMoveToTrash}
-          onToggleTask={handleToggleTask}
-        />
+        {filteredTasks.length === 0 ? (
+          <p className="no-tasks">No tasks here</p>
+        ) : (
+          <TaskList
+            tasks={filteredTasks}
+            onMoveToTrash={handleMoveToTrash}
+            onMoveBackToTodo={handleRestoreTask}
+            onDeleteForever={handleDeleteForever}
+            onToggleTask={handleToggleTask}
+            activeTab={activeTab}
+          />
+        )}
       </div>
       <Footer />
     </>
